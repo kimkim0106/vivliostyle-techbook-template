@@ -1,0 +1,26 @@
+{
+  "name": "vivliostyle-techbook-template",
+  "description": "A template for creating tech books with Vivliostyle.",
+  "version": "1.0.0",
+  "author": "kimkim0106",
+  "scripts": {
+    "build": "npm run build:web && npm run build:press",
+    "build:web": "vivliostyle build -o output-web.pdf",
+    "build:press": "vivliostyle build -o output-press.pdf --press-ready --crop-marks",
+    "preview": "vivliostyle preview",
+    "textlint": "textlint manuscripts/*.md",
+    "textlint:fix": "textlint --fix manuscripts/*.md"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@vivliostyle/cli": "^10.3.1",
+    "textlint": "^15.2.2",
+    "textlint-filter-rule-allowlist": "^4.0.0",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-preset-ai-writing": "^1.1.0",
+    "textlint-rule-preset-icsmedia": "https://github.com/ics-creative/textlint-rule-preset-icsmedia.git#400d115eecfb8b936a055a30b38192ff47dd6289",
+    "textlint-rule-preset-ja-spacing": "^2.4.3",
+    "textlint-rule-preset-japanese": "^10.0.4"
+  }
+}

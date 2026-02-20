@@ -1,0 +1,69 @@
+/* from https://github.com/microsoft/vscode/extensions/theme-defaults/themes/light_vs.json */
+:root {
+    --vs-prism--background: #ffffff;
+    --vs-prism--color: #000000;
+    --vs-prism--text-shadow: none;
+
+    /* comment */
+    --vs-prism--color-comment: #008000;
+    --vs-prism--color-prolog: #008000;
+    --vs-prism--color-doctype: #008000;
+    --vs-prism--color-cdata: #008000;
+
+    /* keyword.operator / default */
+    --vs-prism--color-punctuation: #000000;
+    --vs-prism--color-namespace: rgba(0, 0, 0, 0.7);
+
+    /* support.type.property-name / entity.other.attribute-name */
+    --vs-prism--color-property: #e50000;
+    /* entity.name.tag */
+    --vs-prism--color-tag: #800000;
+    /* constant.language */
+    --vs-prism--color-constant: #0000ff;
+    --vs-prism--color-symbol: #0000ff;
+    /* markup.deleted / string */
+    --vs-prism--color-deleted: #a31515;
+
+    /* constant.language */
+    --vs-prism--color-boolean: #0000ff;
+    /* constant.numeric */
+    --vs-prism--color-number: #098658;
+
+    /* entity.name.selector */
+    --vs-prism--color-selector: #800000;
+    /* entity.other.attribute-name */
+    --vs-prism--color-attr-name: #e50000;
+    /* string */
+    --vs-prism--color-string: #a31515;
+    --vs-prism--color-char: #a31515;
+    /* storage / storage.type */
+    --vs-prism--color-builtin: #0000ff;
+    /* markup.inserted */
+    --vs-prism--color-inserted: #098658;
+
+    /* keyword.operator */
+    --vs-prism--color-operator: #000000;
+    /* entity.other.attribute-name */
+    --vs-prism--color-entity: #e50000;
+    /* string (url context) */
+    --vs-prism--color-url: #a31515;
+    /* source.css variable / variable.language */
+    --vs-prism--color-variable: #e50000;
+
+    /* keyword (CSS @rules) */
+    --vs-prism--color-atrule: #0000ff;
+    /* string (attribute values) */
+    --vs-prism--color-attr-value: #a31515;
+    /* no explicit function color in light_vs */
+    --vs-prism--color-function: #000000;
+    /* storage.type */
+    --vs-prism--color-class-name: #0000ff;
+
+    /* keyword */
+    --vs-prism--color-keyword: #0000ff;
+
+    /* constant.regexp / string.regexp */
+    --vs-prism--color-regex: #811f3f;
+    /* keyword (important) */
+    --vs-prism--color-important: #0000ff;
+}

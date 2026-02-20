@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build output
+*.pdf
+.vivliostyle
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# dotenv
+.env
+.env.local

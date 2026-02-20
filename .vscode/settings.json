@@ -1,0 +1,9 @@
+{
+  "css.lint.validProperties": [
+    "float-reference"
+  ],
+  "cSpell.words": [
+    "Noto",
+    "Vivliostyle"
+  ]
+}

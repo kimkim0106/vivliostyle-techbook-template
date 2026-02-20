@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap');
+
+/* ====================
+   カスタムプロパティ
+   ==================== */
+:root {
+    --vs-font-family: 'Noto Serif JP', serif;
+    --vs-document-root-counter-reset: vs-counter-code; /* ソースコードブロックの自動番号用カウンター */
+}
+
+/* ====================
+   フォント
+   ==================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ====================
+   本文
+   ==================== */
+p {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ====================
+   改ページ
+   ==================== */
+hr.page-wrap {
+    break-after: page;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    height: 1px;
+}
+
+/* ====================
+   目次
+   ==================== */
+nav#toc ul {
+    padding-left: 0;
+}
+
+nav#toc li {
+    list-style: none;
+}
+
+/* ====================
+   奥付
+   ==================== */
+section#colophon {
+    position: relative;
+    float-reference: page;
+    float: bottom;
+    margin-bottom: 0;
+}
+
+section#colophon a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+section#colophon li {
+    list-style: none;
+}
+
+section#colophon .colophon-info li {
+    display: flex;
+}
+
+section#colophon .colophon-info .label {
+    display: inline-block;
+    width: 3em;
+    margin-right: 1em;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+section#colophon .colophon-info .value {
+    flex: 1;
+}
+
+/* ====================
+   ソースコードブロック
+   ==================== */
+figure[class*='language-'] {
+    counter-increment: vs-counter-code;
+    margin-block: var(--vs--figure-margin-block);
+    margin-inline: var(--vs--figure-margin-inline);
+}
+
+figure[class*='language-'] > figcaption::before {
+    content: 'ソースコード' counter(vs-counter-code) ': ';
+}
+
+figure[class*='language-'] > figcaption {
+    margin: 0;
+}
+
+figure[class*='language-'] > pre[class*='language-'] {
+    margin: 0;
+}
+
+pre[class*='language-'] {
+    border: 1px solid #d1d5da;
+    width: 100%;
+}
+
+/* ====================
+   QRコード横並び
+   ==================== */
+.qr-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.qr-container img {
+    width: 100px;
+    height: auto;
+}
+
+.qr-container figcaption {
+    margin-top: 0;
+}
+
+.qr-container figcaption::before {
+    content: "";
+}
+
+.qr-container a {
+    text-decoration: none;
+    counter-increment: none !important;
+}
+
+.qr-container a::before,
+.qr-container a::after {
+    content: none !important;
+    display: none !important;
+}
