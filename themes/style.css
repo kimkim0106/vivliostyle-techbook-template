@@ -38,8 +38,8 @@ hr.page-wrap {
 /* ====================
    目次
    ==================== */
-nav#toc ul {
-    padding-left: 0;
+nav#toc ol {
+    padding-inline-start: 0;
 }
 
 nav#toc li {
