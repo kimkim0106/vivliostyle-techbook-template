@@ -1,0 +1,6 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["Noto", "Vivliostyle", "qrcode", "textlint", "textlintrc"],
+  "ignorePaths": ["node_modules", "output-*.pdf"]
+}

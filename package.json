@@ -8,6 +8,7 @@
     "build:web": "vivliostyle build -o output-web.pdf",
     "build:press": "vivliostyle build -o output-press.pdf --press-ready --crop-marks",
     "preview": "vivliostyle preview",
+    "cspell": "cspell manuscripts/*.md",
     "textlint": "textlint manuscripts/*.md",
     "textlint:fix": "textlint --fix manuscripts/*.md"
   },
@@ -15,6 +16,7 @@
   "private": true,
   "devDependencies": {
     "@vivliostyle/cli": "^10.3.1",
+    "cspell": "^9.7.0",
     "textlint": "^15.5.2",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-filter-rule-comments": "^1.2.2",
