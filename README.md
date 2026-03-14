@@ -40,6 +40,12 @@ npm run textlint
 npm run textlint:fix
 ```
 
+### cspell
+
+```bash
+npm run cspell
+```
+
 ## ファイル構成
 
 ```
@@ -55,6 +61,7 @@ themes/
   prism/theme-vs-light.css # コードブロック用スタイル
 vivliostyle.config.js      # Vivliostyle 設定
 .textlintrc                # textlint 設定
+cspell.json                # cspell 設定
 ```
 
 ## カスタマイズ
@@ -80,6 +87,8 @@ vivliostyle.config.js      # Vivliostyle 設定
 - .textlintrc
   - 日本語文章向けの lint ルール
     - スペース、文章ルール、表記ゆれチェックなど
+- cspell.json
+  - 英単語のスペルチェック設定
 
 詳細は `manuscripts/01.md` を参照してください。
 
