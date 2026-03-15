@@ -1,0 +1,5 @@
+Noto
+Vivliostyle
+qrcode
+textlint
+textlintrc
