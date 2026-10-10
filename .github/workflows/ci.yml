@@ -30,11 +30,12 @@ jobs:
             test -s "$pdf"
             pdfinfo "$pdf"
           done
-      # - uses: actions/upload-artifact@v4
-      #   if: github.event_name == 'pull_request'
-      #   with:
-      #     name: pdf
-      #     path: |
-      #       output-web.pdf
-      #       output-press.pdf
-      #     retention-days: 7
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'pull_request'
+        with:
+          name: pdf
+          path: |
+            output-web.pdf
+            output-press.pdf
+          retention-days: 7
+          if-no-files-found: error
