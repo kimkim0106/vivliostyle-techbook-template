@@ -18,7 +18,18 @@ jobs:
       - run: npm ci
       - run: npm run cspell
       - run: npm run textlint
-      - run: npm run build
+      # Run press-ready as the runner user to avoid Docker bind-mount permissions.
+      - name: Install PDF processing tools
+        run: sudo apt-get update && sudo apt-get install -y ghostscript poppler-utils
+      - run: npm run build:web
+      - name: Build press-ready PDF
+        run: npx vivliostyle build -o output-press.pdf --preflight press-ready-local --crop-marks
+      - name: Verify generated PDFs
+        run: |
+          for pdf in output-web.pdf output-press.pdf; do
+            test -s "$pdf"
+            pdfinfo "$pdf"
+          done
       # - uses: actions/upload-artifact@v4
       #   if: github.event_name == 'pull_request'
       #   with:

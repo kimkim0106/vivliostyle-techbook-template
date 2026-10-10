@@ -33,6 +33,11 @@ npm run build
 
 なお `build:press` の実行には Docker が必要です。
 
+GitHub Actions では Ghostscript と Poppler をランナーにインストールし、
+`--preflight press-ready-local` を指定して印刷入稿用 PDF を生成します。
+Docker コンテナとランナーのユーザー ID の違いによる書き込み権限の問題を避けるためです。
+生成後は、両方の PDF が存在し、`pdfinfo` で読み取れることを確認します。
+
 ### textlint
 
 ```bash
