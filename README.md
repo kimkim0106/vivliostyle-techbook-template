@@ -38,6 +38,12 @@ GitHub Actions では Ghostscript と Poppler をランナーにインストー�
 Docker コンテナとランナーのユーザー ID の違いによる書き込み権限の問題を避けるためです。
 生成後は、両方の PDF が存在し、`pdfinfo` で読み取れることを確認します。
 
+### GitHub Actions での PDF 保存
+
+`.github/workflows/ci.yml` の `actions/upload-artifact@v4` のステップをコメント解除すると、
+PR の CI で生成した両 PDF を7日間保存できます。
+CI 完了後、GitHub の Actions で該当の実行を開き、Artifacts の `pdf` をダウンロードしてください。
+
 ### textlint
 
 ```bash
