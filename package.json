@@ -15,7 +15,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "@vivliostyle/cli": "^11.3.3",
+    "@vivliostyle/cli": "^11.4.0",
     "cspell": "^10.4.0",
     "textlint": "^15.8.0",
     "textlint-filter-rule-allowlist": "^4.0.0",
