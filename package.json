@@ -23,6 +23,6 @@
     "textlint-rule-preset-ai-writing": "^1.1.0",
     "textlint-rule-preset-icsmedia": "https://github.com/ics-creative/textlint-rule-preset-icsmedia.git#400d115eecfb8b936a055a30b38192ff47dd6289",
     "textlint-rule-preset-ja-spacing": "^3.0.4",
-    "textlint-rule-preset-japanese": "^10.0.4"
+    "textlint-rule-preset-japanese": "^10.1.0"
   }
 }
